@@ -1,0 +1,9 @@
+[hunspell]
+lang = "en_US"
+search_dirs = ["."]
+extra_dictionaries = ["lingo.dic"]
+skip_os_lookups = true
+use_builtin = true
+
+[hunspell.quirks]
+transform_regex = ["\\\\"]

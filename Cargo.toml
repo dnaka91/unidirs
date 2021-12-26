@@ -1,0 +1,26 @@
+[package]
+name = "unidirs"
+version = "0.1.0"
+authors = ["Dominik Nakamura <dnaka91@gmail.com>"]
+edition = "2021"
+rust-version = "1.56"
+license = "MIT"
+description = """\
+Unified directories for different use cases of an application, providing standard directories for \
+local development, when run as service or when run by a user.\
+"""
+homepage = "https://github.com/dnaka91/unidirs"
+repository = "https://github.com/dnaka91/unidirs"
+documentation = "https://docs.rs/unidirs"
+categories = ["development-tools", "filesystem", "os"]
+keywords = ["app_dirs", "basedir", "folder", "path", "service_dirs"]
+include = ["src/**/*", "LICENSE", "README.md"]
+
+[dependencies]
+camino = "1.0.5"
+directories = "4.0.1"
+whoami = "1.2.1"
+
+[dev-dependencies]
+clap = { version = "3.0.0-rc.8", features = ["derive"] }
+tempfile = "3.2.0"
