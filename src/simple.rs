@@ -107,6 +107,7 @@ where
     ///
     /// assert!(called);
     /// ```
+    #[must_use]
     pub fn with(self, f: impl FnOnce(&Self) -> bool) -> Self {
         Self {
             service: self.service || f(&self),
