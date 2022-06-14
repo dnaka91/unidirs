@@ -47,7 +47,7 @@
 //!
 //! #[derive(Parser)]
 //! struct Opt {
-//!     #[clap(long, alias = "daemon")]
+//!     #[clap(long, action, alias = "daemon")]
 //!     service: bool,
 //! }
 //!
