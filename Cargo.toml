@@ -17,10 +17,10 @@ keywords = ["app_dirs", "basedir", "folder", "path", "service_dirs"]
 include = ["src/**/*", "LICENSE", "README.md"]
 
 [dependencies]
-camino = "1.0.9"
+camino = "1.1.1"
 directories = "4.0.1"
-whoami = "1.2.1"
+whoami = "1.2.3"
 
 [dev-dependencies]
-clap = { version = "3.2.1", features = ["derive"] }
+clap = { version = "4.0.10", features = ["derive"] }
 tempfile = "3.3.0"

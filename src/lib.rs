@@ -46,12 +46,12 @@
 //! use unidirs::{Directories, UnifiedDirs};
 //!
 //! #[derive(Parser)]
-//! struct Opt {
-//!     #[clap(long, action, alias = "daemon")]
+//! struct Args {
+//!     #[arg(long, action, alias = "daemon")]
 //!     service: bool,
 //! }
 //!
-//! let opt = Opt::parse();
+//! let opt = Args::parse();
 //! let dirs = UnifiedDirs::simple("com", "example", "app")
 //!     .with(|_| opt.service)
 //!     .build()
