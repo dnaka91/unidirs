@@ -3,7 +3,7 @@ name = "unidirs"
 version = "0.1.0"
 authors = ["Dominik Nakamura <dnaka91@gmail.com>"]
 edition = "2021"
-rust-version = "1.56"
+rust-version = "1.60"
 license = "MIT"
 description = """\
 Unified directories for different use cases of an application, providing standard directories for \
