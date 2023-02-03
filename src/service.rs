@@ -62,9 +62,9 @@ impl ServiceDirs {
             #[cfg(unix)]
             {
                 ServiceDirs {
-                    cache_dir: Utf8PathBuf::from(format!("/var/cache/{}", application)),
-                    config_dir: Utf8PathBuf::from(format!("/etc/{}", application)),
-                    data_dir: Utf8PathBuf::from(format!("/var/lib/{}", application)),
+                    cache_dir: Utf8PathBuf::from(format!("/var/cache/{application}")),
+                    config_dir: Utf8PathBuf::from(format!("/etc/{application}")),
+                    data_dir: Utf8PathBuf::from(format!("/var/lib/{application}")),
                 }
             }
 
