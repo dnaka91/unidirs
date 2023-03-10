@@ -3,7 +3,7 @@ name = "unidirs"
 version = "0.1.0"
 authors = ["Dominik Nakamura <dnaka91@gmail.com>"]
 edition = "2021"
-rust-version = "1.60"
+rust-version = "1.64"
 license = "MIT"
 description = """\
 Unified directories for different use cases of an application, providing standard directories for \
@@ -17,10 +17,10 @@ keywords = ["app_dirs", "basedir", "folder", "path", "service_dirs"]
 include = ["src/**/*", "LICENSE", "README.md"]
 
 [dependencies]
-camino = "1.1.1"
+camino = "1.1.4"
 directories = "4.0.1"
-whoami = "1.2.3"
+whoami = "1.3.0"
 
 [dev-dependencies]
-clap = { version = "4.0.10", features = ["derive"] }
-tempfile = "3.3.0"
+clap = { version = "4.1.8", features = ["derive"] }
+tempfile = "3.4.0"
