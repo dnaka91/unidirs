@@ -11,13 +11,11 @@
 [doc-img]: https://img.shields.io/badge/docs.rs-unidirs-4d76ae?style=for-the-badge
 [doc-url]: https://docs.rs/unidirs
 
-Unified directories for different use cases of an application, providing standard directories for
-local development, when run as service or when run by a user.
+Unified directories for different use cases of an application, providing standard directories for local development, when run as service or when run by a user.
 
 ## Usage
 
-Add `unidirs` to your project with `cargo add unidirs` (needs [cargo-edit]) or add it manually to
-your `Cargo.toml`:
+Add `unidirs` to your project with `cargo add unidirs` or add it manually to your `Cargo.toml`:
 
 ```toml
 [dependencies]
