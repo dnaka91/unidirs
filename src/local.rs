@@ -5,7 +5,7 @@ use camino::{Utf8Path, Utf8PathBuf};
 use crate::Directories;
 
 /// Local directories are meant mostly for debug purposes while developing an application. By
-/// default it provides all available directories in under a `.local` folder in the current working
+/// default it provides all available directories under a `.local` folder in the current working
 /// directory.
 ///
 /// An alternative base directory can be provided with the [`LocalDirs::new_at`] function.

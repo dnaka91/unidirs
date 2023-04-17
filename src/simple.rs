@@ -33,7 +33,7 @@ where
     /// Use certain environment variable names to detect to be in service mode. The value of each
     /// variable doesn't matter, just whether the variable is present.
     ///
-    /// Currently the name `SERVCIE` and `DAEMON` indicate the service mode.
+    /// Currently the name `SERVICE` and `DAEMON` indicate the service mode.
     #[must_use]
     pub fn with_env(self) -> Self {
         self.with(|_| env::vars_os().any(|(name, _)| name == "SERVICE" || name == "DAEMON"))
@@ -50,7 +50,9 @@ where
     /// Compare the executing user's account name against the application name to detect the service
     /// mode.
     ///
-    /// It is common to create a separate
+    /// It is common to create a separate a separate user with the same name as the application,
+    /// which is then used to execute the application. Therefore, if the application name passed in
+    /// [`UnifiedDirs::simple`] matches the executing username, it indicates the service mode.
     #[must_use]
     pub fn with_username(self) -> Self {
         self.with(|builder| whoami::username_os() == builder.application.as_ref())

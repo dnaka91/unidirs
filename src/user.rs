@@ -2,8 +2,14 @@ use camino::{Utf8Path, Utf8PathBuf};
 
 use crate::Directories;
 
+/// User directories are used when applications are directly run by local regular users. The folder
+/// locations vary greatly by platform, as each has their own rules about where to put them.
 ///
 /// ## Linux
+///
+/// On Linux systems the folders are usually located in the home folder, but may be overridden by
+/// the common [XDG user directory](https://wiki.archlinux.org/title/XDG_user_directories)
+/// environment variables.
 ///
 /// | Type   | Location                                                 |
 /// | ------ | -------------------------------------------------------- |

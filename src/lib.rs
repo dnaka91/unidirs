@@ -94,7 +94,7 @@
     clippy::expect_used,
     clippy::unwrap_used
 )]
-#![allow(clippy::module_name_repetitions)]
+#![allow(clippy::module_name_repetitions, clippy::multiple_crate_versions)]
 
 pub use camino::{self, Utf8Path, Utf8PathBuf};
 

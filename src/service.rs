@@ -2,7 +2,7 @@ use camino::{Utf8Path, Utf8PathBuf};
 
 use crate::Directories;
 
-/// Service directories are used for applications that run as a service (or often call daemon),
+/// Service directories are used for applications that run as a service (or often called daemon),
 /// usually run by a dedicated user account and controlled by the system rather than the user.
 ///
 /// The directories are therefore rather global and close to the system instead of being located in

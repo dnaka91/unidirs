@@ -4,3 +4,12 @@ allow-osi-fsf-free = "both"
 exceptions = [
 	{ allow = ["Unicode-DFS-2016"], name = "unicode-ident" },
 ]
+
+[bans]
+skip = [
+	{ name = "redox_syscall", version = "=0.2.16" },
+	{ name = "syn", version = "=1.0.109" },
+]
+skip-tree = [
+	{ name = "windows-sys", version = "=0.45.0", depth = 3 },
+]
